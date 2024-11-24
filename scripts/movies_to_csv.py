@@ -3,6 +3,7 @@ import argparse
 import requests
 from datetime import datetime, timedelta
 
+
 def fetch_films(date_range, number_of_calls, movies, output_file, api_key):
     URL = "https://api.newscatcherapi.com/v2/search"
     
@@ -37,7 +38,11 @@ def fetch_films(date_range, number_of_calls, movies, output_file, api_key):
                 link = article.get("link", "link unavailable")
                 summary = article.get("summary", "summary unavailable")
                 
-                writer.writerow([title, author, published_date, link, summary])
+                matching_movies = [movie for movie in movies if movie.lower() in title.lower()]
+
+                if len(matching_movies) == 1:
+                    writer.writerow([title, author, published_date, link, summary])
+
     else:
         exit(f"Error: {response.status_code}.")
 
