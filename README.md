@@ -49,7 +49,7 @@ All on Ubuntu 22 Linux environment hosted on Amazon Lightsail EC2 instance.
 TODO: Steps to install these tools.
 
 ### Data
-We are using the [newscatcher](https://newscatcherapi.com/) to source over 500 non-duplicate journal movie criticism articles from the web. Five movies all published within a few days of Megalopolis (Megalopolis, The Substance, Joker 2, The Wild Robot, and Venom) and sampled from a +- 6 week interval of September 27, 2024 (the theatrical debut of Megalopolis) to avoid bias in the coverage of Megalopolis as opposed to other movies featured in the study. The scripts used to source and organize this data are included in the scripts directory.
+We are using the [newscatcher](https://newscatcherapi.com/) to source over 500 non-duplicate journal movie criticism articles from the web. Five movies all published within a few days of Megalopolis (Megalopolis, The Substance, Joker 2, The Wild Robot, and Venom) and sampled from a +- 8 week interval of September 27, 2024 (the theatrical debut of Megalopolis) to avoid bias in the coverage of Megalopolis as opposed to other movies featured in the study. The scripts used to source and organize this data are included in the scripts directory.
 
 ## Usage
 
