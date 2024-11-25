@@ -27,7 +27,7 @@ def fetch_films(date_range, number_of_calls, movies, output_file, api_key):
     
     if response.status_code == 200:
         data = response.json()
-        with open(output_file, mode="w", newline="") as f:
+        with open(output_file, mode="a", newline="") as f:
             writer = csv.writer(f)
             writer.writerow(["Title", "Author", "Published Date", "Link", "Summary"])
             
@@ -68,7 +68,7 @@ def main():
       
     except Exception as e:
         exit(f"Error: {e}. Please try again.")  
-        
+         
     fetch_films(date_range=(lower_bound_date, upper_bound_date), 
                 number_of_calls=args.number_of_calls, 
                 movies=args.movies, 

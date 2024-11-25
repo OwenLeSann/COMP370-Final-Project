@@ -4,8 +4,17 @@ import pandas as pd
 
 def filter(csv_file):
     df = pd.read_csv(csv_file)
-    df = df.drop_duplicates(subset=["Title"])    
-    df.to_csv("sample.csv", index=False)
+    
+    df["Title"] = df["Title"].str.strip().str.lower()
+    df["Title"] = df["Title"].str.replace('“', '"').str.replace('”', '"')
+    df["Title"] = df["Title"].str.replace('‘', '"').str.replace('’', '"')
+    df["Title"] = df["Title"].str.replace('`', '"').str.replace('´', '"')
+    df["Title"] = df["Title"].str.replace("'", '"')
+    df = df.drop_duplicates(subset=["Title"])
+    df = df.drop_duplicates(subset=["Summary"])
+    
+    df = df.sample(n=600)
+    df.to_csv("sample_600.csv", index=False)
 
 
 def main():
