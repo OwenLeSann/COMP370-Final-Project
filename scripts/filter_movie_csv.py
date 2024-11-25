@@ -4,11 +4,8 @@ import pandas as pd
 
 def filter(csv_file):
     df = pd.read_csv(csv_file)
-    
-    for column in list(df.columns):
-        df = df.drop_duplicates(subset=[column])
-        
-    df.head(500).to_csv("sample.csv", index=False)
+    df = df.drop_duplicates(subset=["Title"])    
+    df.to_csv("sample.csv", index=False)
 
 
 def main():
