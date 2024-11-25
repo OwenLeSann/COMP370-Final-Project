@@ -33,15 +33,23 @@ Maybe break these into subsections for each technical part of the DS process: Da
 ### Prerequisites
 TODO: Tools, programming languages and libraries needed to interact with project.
 
+For collecting the data we used the following tools:
+* MiniConda
+* Python
+    - csv
+    - argparse
+    - requests
+    - datetime
+    - pandas
+* Jupyter Notebook
+
+All on Ubuntu 22 Linux environment hosted on Amazon Lightsail EC2 instance.
+
 ### Installing
 TODO: Steps to install these tools.
 
 ### Data
-TODO: Insert here a brief description of how the data was retrieved using API calls to NewsAPI.org and detail how the study data can be accessed (ideally not through git).
-We are using the [newscatcher](https://newscatcherapi.com/) api; make sure to mention this in repo's data section.
-
-
-TODO: Talk to team regarding ways to host data. If we choose to use databases, either we can host a "heavier" read/write database on our EC2 instance, or we can host a "lighter" read-only database directly on github. If we choose not to use databases csv/json files instead, we can either host them on the EC2 (link to google sheets say on Apache server) or upload the csv files to git. Personally, I don't want to keep paying for an EC2 instance and I think that using a an ETL pipeline from API call to SQLite would look slick and make it easy for me to collect all of the data (or even way more) without worrying about structure every time I do an API call (which I'll, already have to spread out over 5 days since NewsAPI limits you to 100 calls per day). The con to this is that to annotate the data you would need to query the data, create annotations, and the write them back to the database which is a bit less straight-forward than editing a csv file.
+We are using the [newscatcher](https://newscatcherapi.com/) to source over 500 non-duplicate journal movie criticism articles from the web. Five movies all published within a few days of Megalopolis (Megalopolis, The Substance, Joker 2, The Wild Robot, and Venom) and sampled from a +- 6 week interval of September 27, 2024 (the theatrical debut of Megalopolis) to avoid bias in the coverage of Megalopolis as opposed to other movies featured in the study. The scripts used to source and organize this data are included in the scripts directory.
 
 ## Usage
 
