@@ -10,7 +10,7 @@ Details regarding the assumptions and refinements in our question formulation ca
 
 We are using the [newscatcher](https://newscatcherapi.com/) to source over 500 non-duplicate journal movie criticism articles from the web. Five movies all published within a few days of Megalopolis (Megalopolis, The Substance, Joker 2, The Wild Robot, and Venom) and sampled from a +- 8 week interval of September 27, 2024 (the theatrical debut of Megalopolis) to avoid bias in the coverage of Megalopolis as opposed to other movies featured in the study. The scripts used to source and organize this data are included in the scripts directory.
 
-All of the details regarding how our data was sourced, annotated, and analyzed, in addition to our results and conclusions are summarized in our [final report](https://github.com/OwenLeSann/COMP370-Final-Project/blob/main/report/megalopolis_critical_reception.pdf)
+All of the details regarding how our data was sourced, annotated, and analyzed, in addition to our results and conclusions are summarized in our [final report](https://github.com/OwenLeSann/COMP370-Final-Project/blob/main/report/megalopolis_critical_reception.pdf).
 
 ## Authors
 Owen Le Sann\
