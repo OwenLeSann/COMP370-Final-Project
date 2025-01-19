@@ -4,6 +4,10 @@ import requests
 from datetime import datetime, timedelta
 
 
+"""(datetime, int, str, str, str) -> NoneType
+Sends and API call to newscatcher.com's API to retrieve movie info.
+Upon successful call, parses JSON data and stores it as a csv. Otherwise exits upon error.
+"""
 def fetch_films(date_range, number_of_calls, movies, output_file, api_key):
     URL = "https://api.newscatcherapi.com/v2/search"
     
@@ -46,7 +50,9 @@ def fetch_films(date_range, number_of_calls, movies, output_file, api_key):
     else:
         exit(f"Error: {response.status_code}.")
 
-
+"""
+Accepts CLI text-streamed list of arguments for fetch_films().
+"""
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-r", "--date_range_days", type=int, default=28, help="Specify number of days to look back and ahead of for aticles published on movie_date. The default is 28.")
@@ -74,7 +80,6 @@ def main():
                 movies=args.movies, 
                 output_file=f"{args.output}.csv",
                 api_key=args.api_key)
-    
     
 if __name__ == "__main__":
     main()
