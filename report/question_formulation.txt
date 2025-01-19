@@ -1,0 +1,43 @@
+This file exists to document the assumptions and refinements made in our formulation of the following overview and its questions in context to our analysis of the film Megalopolis.
+
+Overview
+
+Your team has been hired by a media company that wants to understand the news reporting currently happening around the film “(insert a recently-released movie that your team selected here)”. They have indicated that they are especially concerned with visibility and reception relative to other movies that have come out at a similar time. Specifically, they want to know:
+
+1. What aspect of the movie was the focus (topic) of the article?
+
+2. How much coverage the movie received relative to other movies that came out at a similar time?
+
+You will conduct this analysis and submit a report discussing your findings.
+
+Assumptions
+
+The film that we chose to analyze was Megalopolis directed and written by director Francis Ford Coppola. 
+Consquently, our first assumption is that Lionsgate Films is the media company concerned with the visibility and reception of the film. 
+We assume this as the production company, American Zoetrope, is Francis Ford Coppola's own company and hence, since this was his "passion project", we assume that his company American Zoetrope would not be concerned about a loss of funds, but only the availability of more so as to produce Coppola's last masterpiece with full financial freedom.
+Hence, tying into our second assumption, we assume that it was Lionsgate who reached out to us with the below questions and that their use case of this study is forecast how journalistic criticism and the volume of press coverage will influence the box-office earnings of the film.
+The third assumption is that box-office earnings directly impact Lionsgate's profits and that negative and positive film criticisms are directly correlated with the box office earnings of a film over an eight week period. https://www.jstor.org/stable/30040552
+Our fourth  assumption is that a greater volume of press coverage is directly corelated to greater gain or loss in box office earnings respective of positive or negative criticisms.
+Our fifth assumption is that every article sourced from NewsApi.org mentioning Megalopolis is an online journalistic criticism of the film.
+
+Question formulation
+
+1.
+	i) What aspect of Megalopolis was the focus (topic) of the article?
+	ii) What aspect of Megalopolis was the focus (topic) of the online journalistic criticism?
+	iii) What are the words characterizing the focus (topic) of the online journalistic criticism of Megalopolis?
+	iv) What are the top 10 words characterizing whether the online journalistic criticisms of Megalopolis are positive or negative?
+	v) What are the 10 words with the highest tf-idf scores characterizing whether the online journalistic criticisms of Megalopolis are positive or negative?
+
+2. 
+	i) How much coverage did Megalopolis receive relative to other movies that came out at a similar time?
+	ii) What proportion of coverage did Megalopolis recieve relative to other movies that came out within an eight week period of megalopolis?
+	iii) What proportion of coverage did Megalopolis receive relative to other movies that came out within four weeks before or after Megalopolis' box-office debut?
+	iv) What proportion of articles mention Megalopolis relative to mentions of other movies that were released within four weeks before or after Megalopolis' box-office debut?
+
+Final Questions
+
+1. What are the 10 words with the highest tf-idf scores characterizing whether the online journalistic criticisms of Megalopolis are positive or negative?
+
+2. What proportion of articles mention Megalopolis relative to mentions of other movies that were released within four weeks before or after Megalopolis' box-office debut?
+
